@@ -126,4 +126,4 @@ Actualmente cuenta con una página principal y una demo básica funcional.
 
 ## Autor
 
-Proyecto desarrollado como propuesta académica para aplicar conceptos de desarrollo web e Inteligencia Artificial.
+Jonathan Alexis Lozano Figueroa.
