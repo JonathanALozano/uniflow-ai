@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UniFlow AI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="navbar">
+      <h2 class="logo">UniFlow AI</h2>
+      <a href="#demo" class="nav-btn">Probar demo</a>
+    </nav>
+
+    <section class="hero-content">
+      <div class="hero-text">
+        <h1>Organiza tus tareas con ayuda de Inteligencia Artificial</h1>
+        <p>
+          UniFlow AI es una plataforma web pensada para estudiantes que necesitan
+          organizar tareas, proyectos y exámenes de forma inteligente.
+        </p>
+        <a href="#demo" class="main-btn">Comenzar ahora</a>
+      </div>
+
+      <div class="hero-card">
+        <h3>Plan inteligente del día</h3>
+        <p><strong>Prioridad:</strong> Terminar tarea de cálculo</p>
+        <p><strong>Riesgo:</strong> Proyecto de programación próximo</p>
+        <p><strong>Recomendación:</strong> Estudiar 2 horas hoy</p>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="problem-section">
+      <h2>¿Qué problema resuelve?</h2>
+      <p>
+        Muchos estudiantes tienen tareas, exámenes y proyectos al mismo tiempo,
+        pero no siempre saben qué actividad hacer primero. Esto provoca atrasos,
+        estrés y entregas incompletas.
+      </p>
+    </section>
+
+    <section class="features">
+      <h2>Funciones principales</h2>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Organización inteligente</h3>
+          <p>Ordena tus pendientes según urgencia, dificultad e importancia.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Predicción de riesgo</h3>
+          <p>Detecta tareas que podrían retrasarse si no se atienden pronto.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Plan diario</h3>
+          <p>Genera una recomendación clara sobre qué hacer durante el día.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="demo-section">
+      <h2>Demo básica</h2>
+      <p>Agrega una tarea y deja que UniFlow AI te dé una recomendación inicial.</p>
+
+      <div class="form-container">
+        <input type="text" id="taskName" placeholder="Nombre de la tarea" />
+
+        <select id="difficulty">
+          <option value="">Selecciona dificultad</option>
+          <option value="baja">Baja</option>
+          <option value="media">Media</option>
+          <option value="alta">Alta</option>
+        </select>
+
+        <select id="urgency">
+          <option value="">Selecciona urgencia</option>
+          <option value="baja">Baja</option>
+          <option value="media">Media</option>
+          <option value="alta">Alta</option>
+        </select>
+
+        <button onclick="analyzeTask()">Analizar tarea</button>
+      </div>
+
+      <div id="result" class="result-card hidden"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 UniFlow AI - Proyecto académico con Inteligencia Artificial</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
